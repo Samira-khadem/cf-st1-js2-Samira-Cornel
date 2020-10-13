@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <p id="test"></p>
+    <script>
+        //var today = Number(prompt("give a number between 0 and 6"));
+        var date = new Date();
+        var today = date.getDay();
+        var result;
+        switch (today) {
+            case 0:
+                result = "Sunday";
+                break;
+            case 1:
+                result = "Monday";
+                break;
+            case 2:
+                result = "Tuesday";
+                break;
+            case 3:
+                result = "Wednesday";
+                break;
+            case 4:
+                result = "Thursday";
+                break;
+            case 5:
+                result = "Friday";
+                break;
+            case 6:
+                result = "Saturday";
+        }
+        //document.getElementById("test").innerHTML = "Today is " + result;
+
+        var hour = new Date().getHours();
+        var drink;
+        if (hour > 18) {
+            drink = " yes drink";
+        } else {
+            drink = " no drink";
+        }
+        document.getElementById("test").innerHTML = "Today is " + result + drink;
+    </script>
 </body>
+
 </html>
