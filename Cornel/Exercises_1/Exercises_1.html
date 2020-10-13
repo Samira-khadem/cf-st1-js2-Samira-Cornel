@@ -10,38 +10,37 @@
 
 
 
-
+<p>Today is:</p>
 
 
 
     <script>
-        d = new Date();
-
-        var grade = 'A';
-            switch (grade) {
-                case 'Monday': document.write("Hard Day");
+    
+    current_date = new Date()
+    currentday = current_date.getDay()
+    console.log(currentday);
+        var grade = 0;
+            switch (currentday) {
+                case 0: document.write("Hard Day");
                     break;
-                case 'Tuesday': document.write("Relaxing Day");
+                case 1: document.write("Relaxing Day");
                     break;
-                case 'Wednesday': document.write("Party Day");
+                case 2: document.write("Party Day");
                     break;
-                case 'Thursday': document.write("Working Day");
+                case 3: document.write("Working Day");
                     break;
-                case 'Friday': document.write("Working Day");
+                case 4: document.write("Working Day");
                     break;
-                case 'Saturday': document.write("Relaxing Day");
+                case 5: document.write("Relaxing Day");
                     break;
-                case 'Sunday': document.write("Relaxing Day");
+                case 6: document.write("Relaxing Day");
                     break;
                 default: document.write("Error")
             }
 
-        console.log(d.toString());
-        console.log(d.getFullYear());
-        console.log(d.getMonth());
-        console.log(d.getDate());
-        console.log(d.getMinutes());
-        console.log(d.getSeconds());
+        
+        
+            
 
     </script>
 </body>
