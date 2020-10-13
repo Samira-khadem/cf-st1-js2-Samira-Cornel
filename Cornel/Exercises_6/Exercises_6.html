@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+        var numbers = [8,31,89,71,57,27];
+        
+        for(i = 0;i < 100;i++){
+            var x = Math.floor(Math.random() * 100);
+            console.log(x);
+            ;
+
+            if(x == 8 || x == 31 || x == 89 || x == 71 || x == 57 || x == 27){
+                console.log(x);
+                var y = numbers.indexOf(x);
+                console.log(y);
+                document.write("This is the interation " + i + " and it matches with the number " + x + " from the position " + y + "<br><br>");
+            }
+
+           
+        }
+
+
+        console.log(numbers.indexOf(57));
+    </script>
+</body>
+</html>
