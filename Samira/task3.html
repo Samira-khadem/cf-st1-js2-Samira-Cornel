@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img id="image" src="" alt="">
+
+    <script>
+        var today;
+        //var temp = Math.round(Math.random()*31);
+        var temp = Math.round(Math.random()*40) - 6;
+        console.log(temp)
+        
+    
+        if (temp < 10) {
+            today = " and it is very cold";
+        }
+        else if (temp > 25) {
+            today = " and it is very warm";
+            //document.getElementById(Image) .src = ;
+            document.getElementById("image").src = "warm.jpg";
+        }
+        else {
+            today = " and it is moderate";
+        }
+        document.write("It is" + temp + "celsious" + today);
+
+
+
+    </script>
+
+</body>
+
+</html>
